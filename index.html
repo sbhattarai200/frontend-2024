@@ -1,10 +1,46 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Hello this is test
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            /*tag selector*/
+            button{
+                height: fit-content;
+                color: #fff;
+                border-radius: 10px;
+                padding: 10px 20px;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+            button:hover{
+                opacity: 0.6;
+            }
+            .button1{
+                background: red;
+                border: 1px solid red;
+            }
+            .button2{
+                background: green;
+                border: 1px solid green;
+            }
+            #button1{
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <button 
+                onclick="alert('hello')" 
+                class="button button1" 
+                id="button1"
+                >
+            test 1
+        </button>
+        <button
+             ondblclick="alert('clicked 2 times')"
+             class="button button2" id="button2">
+            test 2
+        </button>
+    </body>
 </html>
