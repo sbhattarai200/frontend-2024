@@ -4,8 +4,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <style>
+            body{
+                display: flex;
+                flex-direction: column;
+                gap:10px;
+                padding: 10px;
+            }
+            .random{
+                border-radius: 10px;
+                box-shadow: 10px 10px #f6f5f550;
+            }
             /*tag selector*/
             button{
+                width: fit-content;
                 height: fit-content;
                 color: #fff;
                 border-radius: 10px;
@@ -42,5 +53,21 @@
              class="button button2" id="button2">
             test 2
         </button>
+        <img 
+            class="random"
+            width="300px"
+            height="200px"
+            src="http://storage.googleapis.com/lets-read-asia/assets/images/adbe34b7-3ead-4d34-93ad-12b05c823266.png" 
+            alt="Image"
+            >
+        <div id="time">
+            
+        </div>
+        <script>
+            let timeElem=document.getElementById('time');
+            setInterval(()=>{
+                timeElem.innerText=new Date().toLocaleString();
+            },500); //500ms
+        </script>
     </body>
 </html>
