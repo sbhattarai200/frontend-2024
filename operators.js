@@ -7,6 +7,8 @@ console.log(number1/number2);
 if(number1===number2){
     console.log("equal");
 }
+console.log("10"!=10);
+console.log("10"!==10);
 if(number1!==30){
     console.log("num1 not equal to 30");
 }

@@ -1,9 +1,9 @@
 //FUNCTION
 //NAMED FUNCTION
-function printName(name){
+function printName(roll,name){
     console.log(name);
 }
-printName("Shyam");
+printName("","Shyam");
 
 //ANONYMOUS FUNCTION : ()=>{ }
 const printName1=(studentName)=>{
@@ -20,7 +20,7 @@ addNums(10,20)
 addNums(30,40)
 const addNums2=(num1,num2,retryTimes)=>{
     let sum=num1+num2;
-    if(retryTimes!==1){
+    if(retryTimes!==0){
         console.log("sum: ",sum);//1,2
         console.log("retryTimes",retryTimes);
         addNums2(num1,num2,retryTimes-1);
