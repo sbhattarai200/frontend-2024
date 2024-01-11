@@ -48,3 +48,6 @@ students.forEach((item)=>{
     }
 })
 console.log(students);
+
+let abc=['ram','shyam','hari'];
+abc=['first',...abc,'bibek']

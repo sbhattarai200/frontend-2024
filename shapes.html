@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shapes</title>
+    <style>
+        .circle{
+            background: rgb(57, 57, 194);
+            border-radius: 50%;
+            padding: 5px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: 700;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle">
+        A
+    </div>
+    <script>
+        let name="sudhir";
+        let nameElem=document.querySelector('.circle');
+        //string method to return character at nth index
+        nameElem.innerText=name.charAt(0).toUpperCase();
+    </script>
+</body>
+</html>
