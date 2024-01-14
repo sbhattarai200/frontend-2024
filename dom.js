@@ -54,3 +54,54 @@ inputElem.addEventListener('input',(event)=>{
     let studentName=event.target.value;
     console.log(studentName);
 })
+
+let shakeButton=document.getElementById('fly');
+// const newPositionX = Math.random() * (window.innerWidth - flyBtnElem.clientWidth);
+    // const newPositionY = Math.random() * (window.innerHeight - flyBtnElem.clientHeight);
+    // flyBtnElem.style.left = newPositionX + 'px';
+    // flyBtnElem.style.top = newPositionY + 'px';
+// shakeButton.addEventListener('mouseover', () => {
+//     shakeButton.classList.add('shake');
+//   });
+//   shakeButton.addEventListener('mouseout', () => {
+//     shakeButton.classList.remove('shake');
+//   });
+
+
+  //back to top button logic here
+  window.addEventListener('scroll',(event)=>{
+    let scrollElem=document.getElementById('scrollDiv');
+    if(window.scrollY<150){
+        scrollElem.style.visibility="hidden"
+    }
+    else{
+        scrollElem.style.visibility="visible"
+    }
+  })
+  let button2=document.getElementById('button2');
+  button2.addEventListener('click',(event)=>{
+    let divToScroll=document.getElementById('div2');
+    divToScroll.scrollIntoView();
+  })
+  //getBattery() => device ko battery return garcha
+  window.navigator.getBattery().then(battery=>{
+    let percentElem=document.getElementById('chargingPercentage');
+    let batteryImg=document.querySelector('#chargingInformation img');
+    percentElem.innerText=`${(battery.level*100).toFixed(2)}%`
+    if(battery.charging){
+        batteryImg.src="./charging.gif"
+    }
+    else{
+        batteryImg.src="./discharging.gif"
+    }
+    battery.onchargingchange=(data)=>{
+        console.log(data);
+        if(data.target.charging){
+            batteryImg.src="./charging.gif"
+        }
+        else{
+            batteryImg.src="./discharging.gif"
+        }
+    }
+  })
+ 
