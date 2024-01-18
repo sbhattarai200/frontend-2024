@@ -78,9 +78,11 @@ let shakeButton=document.getElementById('fly');
         scrollElem.style.visibility="visible"
     }
   })
+  //adding click event listner to button 2
   let button2=document.getElementById('button2');
   button2.addEventListener('click',(event)=>{
     let divToScroll=document.getElementById('div2');
+    //scrolling to div2
     divToScroll.scrollIntoView();
   })
   //getBattery() => device ko battery return garcha
@@ -109,4 +111,41 @@ let shakeButton=document.getElementById('fly');
         percentElem.innerText=`${(newLevel.target.level*100).toFixed(2)}%.`
     }
   })
- 
+const changeUrl=()=>{
+    window.location.href="https://www.google.com"
+}
+const goBack=()=>{
+    window.history.back();
+}
+const updateUrl=()=>{
+    window.location.href=window.location.pathname+"?name=sudhir"
+}
+const handleAudioVideo=()=>{
+    window.navigator.getUserMedia(
+        {audio:false,video:true},
+        (r)=>{
+            let videoElem=document.getElementById("video");
+            videoElem.srcObject=r;
+        },
+        (e)=>{
+            console.log('permission denied');
+        })
+}
+const fetchSomething=()=>{
+    new Promise((resolve,reject)=>{
+        fetch('random-url')
+        .then(res=>{
+            resolve(res)
+        })
+        .catch(err=>{
+            reject(err)
+        })
+    })
+}
+const fetchSomething1=()=>{
+    new Promise((resolve,reject)=>{
+        fetch('')
+        .then(res=>{resolve(res)})
+        .catch(err=>{reject(err)})
+    })
+}

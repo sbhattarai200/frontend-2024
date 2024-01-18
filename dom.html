@@ -9,6 +9,9 @@
         }
         body{
             scroll-behavior: smooth;
+            display: flex;
+            flex-direction: column-reverse;
+            gap:10px
         }
         #scrollDiv{
             visibility: hidden;
@@ -141,6 +144,12 @@
         <img width="200px" height="200px"/>
         <div id="chargingPercentage"></div>
     </div>
+    <video autoplay id="video"></video>
     <script src="./dom.js"></script>
+    <button onclick="changeUrl()">Go to google</button>
+    <button onclick="goBack()">Go back</button>
+    <button onclick="updateUrl()">update url</button>
+    <button onclick="handleAudioVideo()">get media access</button>
+    <button onclick="handleAudioVideo()">screenshot</button>
 </body>
 </html>
