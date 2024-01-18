@@ -103,5 +103,10 @@ let shakeButton=document.getElementById('fly');
             batteryImg.src="./discharging.gif"
         }
     }
+    console.log(battery);
+    battery.onlevelchange=(newLevel)=>{
+        console.log(newLevel);
+        percentElem.innerText=`${(newLevel.target.level*100).toFixed(2)}%.`
+    }
   })
  
