@@ -1,0 +1,22 @@
+.navigation-wrapper{
+    display: flex;
+    gap:10px;
+    padding: 8px 10px;
+    align-items: center;
+    justify-content: space-between;
+    background: #878c02;
+    color: white;
+}
+.navigation-title{
+    font-weight: bold;
+}
+.nav-links-wrapper,.logo-wrapper{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.navigation-wrapper img{
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+}

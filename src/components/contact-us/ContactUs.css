@@ -1,0 +1,20 @@
+.form-wrapper{
+    padding: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+.form-wrapper form{
+    display: flex;
+    gap:10px;
+    flex-direction: column;
+
+}
+.form-wrapper form input,.form-wrapper form button{
+    padding:10px;
+    outline: none;
+    border:1px solid #ccc;
+}
+.form-wrapper form button{
+    background: #b71d1c;
+    color: white;
+}

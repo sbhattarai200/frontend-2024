@@ -1,0 +1,23 @@
+.meal-wrapper{
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.meal-title{
+    font-weight: bold;
+    font-size: 18px;
+}
+.meal-wrapper img{
+    width: 200px;
+    height: 200px;
+    justify-self: center;
+    align-self: center;
+    border-radius: 10px;
+}
+.meal-desc{
+    font-size: 14px;
+    color: #858585;
+}
