@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getRandomMeal } from "../../apis/meal";
 import "./Meal.css";
+import MealsByLetter from "./MealsByLetter";
 function Meal() {
   const [meal, setRandomMeal] = useState({});
   const [fetchAgain, setFetchAgain] = React.useState(true);
@@ -11,7 +12,8 @@ function Meal() {
   }, [fetchAgain]);
   return (
     <div className="meal-wrapper">
-      <button
+      <MealsByLetter/>
+      {/* <button
         onClick={() => {
             setFetchAgain(!fetchAgain);
         }}
@@ -20,7 +22,7 @@ function Meal() {
       </button>
       <span className="meal-title"> {meal.strMeal}</span>
       <img src={meal.strMealThumb} alt="" />
-      <span className="meal-desc">{meal.strInstructions}</span>
+      <span className="meal-desc">{meal.strInstructions}</span> */}
     </div>
   );
 }
