@@ -9,6 +9,9 @@
 .meal-main-wrapper{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 .meal-title{
     font-weight: bold;
@@ -28,4 +31,15 @@
 .letters-wrapper{
     display: flex;
     gap: 10px;
+}
+.meals-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.meal-item
+{
+    display: grid;
+    gap:5px;
+    text-align: start;
 }

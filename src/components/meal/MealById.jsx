@@ -10,8 +10,9 @@ function MealById(){
             setMeal(res?.meals?.[0])
         })
     },[])
-    return <div>
-        {meal.strMeal}
+    return <div style={{maxWidth:500,margin:"auto",display:"flex",flexDirection:"column"}}>
+        <span>{meal.strMeal}</span>
+        <img width={250} height={250} src={meal.strMealThumb} alt="" />
     </div>
 }
 export default MealById;

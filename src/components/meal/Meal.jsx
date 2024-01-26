@@ -13,16 +13,6 @@ function Meal() {
   return (
     <div className="meal-wrapper">
       <MealsByLetter/>
-      {/* <button
-        onClick={() => {
-            setFetchAgain(!fetchAgain);
-        }}
-      >
-        Fetch again
-      </button>
-      <span className="meal-title"> {meal.strMeal}</span>
-      <img src={meal.strMealThumb} alt="" />
-      <span className="meal-desc">{meal.strInstructions}</span> */}
     </div>
   );
 }
