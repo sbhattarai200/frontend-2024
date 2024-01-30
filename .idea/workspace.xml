@@ -4,13 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6405a1a9-1418-4553-b689-e73fa3006209" name="Changes" comment="feat: react project setup, folder structure, components and props, added routing using react router dom , api fetch using axios,">
+    <list default="true" id="6405a1a9-1418-4553-b689-e73fa3006209" name="Changes" comment="feat: added dynamic route, added MealsByLetter component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/meal/Meal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/meal/Meal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/meal/MealById.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/meal/MealById.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -49,9 +58,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2bQiDsYYBgwRAX9kxp6T4UPNOpn" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -69,6 +78,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/sudhirbhattarai/personal/react-2024/sudhir/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -88,6 +100,9 @@
       <option name="presentableId" value="Default" />
       <updated>1706153587011</updated>
       <workItem from="1706153588909" duration="1859000" />
+      <workItem from="1706235629845" duration="102000" />
+      <workItem from="1706243146893" duration="398000" />
+      <workItem from="1706624891758" duration="3464000" />
     </task>
     <task id="LOCAL-00001" summary="feat: react project setup, folder structure, components and props, added routing using react router dom , api fetch using axios,">
       <option name="closed" value="true" />
@@ -97,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706153783099</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: added dynamic route, added MealsByLetter component">
+      <option name="closed" value="true" />
+      <created>1706243251118</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706243251118</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +128,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: react project setup, folder structure, components and props, added routing using react router dom , api fetch using axios," />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: react project setup, folder structure, components and props, added routing using react router dom , api fetch using axios," />
+    <MESSAGE value="feat: added dynamic route, added MealsByLetter component" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added dynamic route, added MealsByLetter component" />
   </component>
 </project>
