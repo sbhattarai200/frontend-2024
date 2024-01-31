@@ -4,6 +4,7 @@ import ContactUs from "./components/contact-us/ContactUs";
 import Meal from "./components/meal/Meal";
 import { Route, Routes } from "react-router-dom";
 import MealById from "./components/meal/MealById";
+import Cards from "./components/cards/Cards";
 
 //PROPS
 function App() {
@@ -14,7 +15,7 @@ function App() {
   console.log(name, roll);
   return (
     <div>
-      <Navigation/>
+      <Navigation />
       <Routes>
         <Route
           path="/contact"
@@ -29,6 +30,7 @@ function App() {
         />
         <Route path="/about" element={<About />} />
         <Route path="/meal" element={<Meal />} />
+        <Route path="/cards" element={<Cards />} />
         <Route path="/meals/:mealId" element={<MealById />} />
         <Route path="/" element={<Meal />} />
       </Routes>
