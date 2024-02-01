@@ -1,6 +1,5 @@
 import React from "react";
 import ContactCard from "./ContactCard";
-import FoodCard from "./FoodCard";
 
 function Cards(props) {
   return (
