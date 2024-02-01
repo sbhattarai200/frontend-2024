@@ -5,6 +5,7 @@ import MealsByLetter from "./MealsByLetter";
 function Meal() {
   const searchRef = React.useRef();
   const [meal, setRandomMeal] = useState({});
+  const [meals, setMeals] = useState([]);
   const [fetchAgain, setFetchAgain] = React.useState(true);
   useEffect(() => {
     getRandomMeal().then((res) => {
@@ -13,7 +14,7 @@ function Meal() {
   }, [fetchAgain]);
   const handleSearch = () => {
     searchMealByName(searchRef.current.value).then((res) => {
-      console.log(res);
+      setMeals(res?.meals);
     });
   };
   return (
@@ -26,7 +27,7 @@ function Meal() {
         />
         <button onClick={() => handleSearch()}>Search</button>
       </div>
-      <MealsByLetter />
+      <MealsByLetter searchedMeals={meals} />
     </div>
   );
 }

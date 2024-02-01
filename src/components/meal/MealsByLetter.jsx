@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { getMealsByFirstLetter } from "../../apis/meal";
 import "./Meal.css";
 import { Link } from "react-router-dom";
-function MealsByLetter() {
+function MealsByLetter({ searchedMeals }) {
   const [selectedLetter, setSelectedLetter] = React.useState("A");
   const [meals, setMeals] = React.useState([]);
   const letters = [
@@ -34,6 +34,10 @@ function MealsByLetter() {
     "Z",
   ];
   useEffect(() => {
+    if (searchedMeals.length) {
+      setMeals([...searchedMeals]);
+      return;
+    }
     getMealsByFirstLetter(selectedLetter).then((res) => {
       if (res && res?.meals) {
         setMeals(res.meals);
@@ -41,7 +45,7 @@ function MealsByLetter() {
         setMeals([]);
       }
     });
-  }, [selectedLetter]);
+  }, [selectedLetter, searchedMeals]);
   return (
     <div className="meal-main-wrapper">
       <div className="flex gap-2 items-center">
